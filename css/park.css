@@ -1,0 +1,27 @@
+
+#wrap {
+    width: 1400px;
+    text-align: center;
+    justify-content: space-between;
+}
+#topPark > span{
+    display: inline-block;
+    border: 1px black solid;
+    width: 10%;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px;
+}
+
+
+.full{
+    background-color: red;
+}
+
+.select{
+    background-color: yellow;
+}
+
+#topPark{
+    height: 500px;
+}
