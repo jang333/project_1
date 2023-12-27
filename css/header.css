@@ -8,7 +8,6 @@
 *{
     font-family: 'GmarketSansMedium';
     font-size: 18px;
-    color: #fff;
 }
 body{
     background-color: #fff;
@@ -84,4 +83,87 @@ body{
 #search>span{
     font-size: 24px;
     margin-right: 4px;
+    color:#fff;
+}
+/*로그인 모달*/
+#loginBg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    display: none;
+}
+#loginWrap{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 800px;
+    background-color: #fff;
+    z-index: 1000;
+    display: none;
+}
+#loginWrap>h3{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+#closeBtn{
+    position: absolute;
+    top:10px;
+    right:10px;
+}
+#loginBox{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 40px;
+    border-top: 3px solid #333;
+}
+#loginBox>form>input[type="text"],#loginBox>form>input[type="password"]{
+    border: 1px solid #eaeaea;
+    width: 458px;
+    height: 50px;
+    padding: 0 20px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+}
+#loginBox>form>input::placeholder{
+    color:#dfdfdf;
+}
+#loginList{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0 60px 0;
+}
+#loginList>li>a{
+    font-size: 14px;
+    color:#8a8a8a
+}
+#loginList>li>a:hover{
+    color:#333;
+    text-decoration: underline;
+    text-underline-offset : 4px;
+}
+#loginBox>form>input[type="button"]{
+    width: 458px;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#login{
+    background-color: #121212;
+    color: #fff;
+}
+#fastLogin{
+    background-color: #f1e239;
+}
+#otpLogin{
+    border: 1px solid #adadad;
 }
