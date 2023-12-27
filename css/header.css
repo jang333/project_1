@@ -1,0 +1,77 @@
+/*메인폰트 : 해피니스 산스*/
+@font-face {
+    font-family: 'Happiness-Sans-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+/*강조폰트 : 해피니스 산스 Title*/
+@font-face {
+    font-family: 'Happiness-Sans-Title';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/Happiness-Sans-Title.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    font-family: 'Happiness-Sans-Bold';
+    font-size: 18px;
+    color: #fff;
+}
+body{
+    background-color: #121212;
+}
+a{
+    color: #333;
+}
+/*헤더 시작*/
+#header{
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+}
+#headerWrap{
+    width: calc(100% - 480px);
+    min-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 70px;
+}
+h1{
+    color:#333;
+}
+#leftHeader{
+    display: flex;
+    justify-content: flex-start;
+}
+#gnv{
+    display: flex;
+}
+#gnv>li{
+    padding: 0 16px;
+}
+#gnv>li>a{
+    font-family: 'Happiness-Sans-Title';
+}
+#gnv>li>a:hover{
+    color:#f1e239;
+    text-decoration: underline;
+    text-underline-offset : 5px;
+}
+#memberServices{
+    display: flex;
+    align-items: center;
+}
+#memberServices>li{
+    padding: 0 8px;
+}
+#memberServices>li>a{
+    font-size: 13px;
+}
+#search{
+    background-color: #121212;
+    height: 70px;
+    width: 210px;
+    text-align: center;
+}
