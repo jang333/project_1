@@ -3,3 +3,5 @@ $( document ).ready( function(){
     $('#headers').load('../common/header.html');
     $('#footers').load('../common/footer.html');
 });
+
+

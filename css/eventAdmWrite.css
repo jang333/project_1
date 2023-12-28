@@ -21,40 +21,48 @@
 #wrap{
     width: 1400px;    
 }
-
-h1{
-    font-weight: bold;
-    font-size: 25px;
-    margin: 50px 0;
+#writeWrap{
+    padding: 0 50px;
+    border-bottom: 1px solid black;
+    text-align: center;
 }
-
-/* 이벤트 리스트 css */
-
-#eList{    
+#date{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    border-bottom: 1px solid black;
+    width: 500px;    
+    color: #757575    
 }
-.event{
-    border: 0.5px solid rgb(192, 192, 192);
-    width: 330px; 
-    margin: 0 15px 30px 15px;    
-}
-#main img{
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-.eName{
-    font-size: 17px;
-    font-weight: bold;
-    margin-bottom: 20px;
+#title{
+    border-bottom: 1px solid black;
+    width: 500px;
+    margin-bottom: 30px;
     padding: 0 10px;
+    text-align: left;
 }
-.eDate{
-    font-size: 17px;
-    color: rgb(99, 99, 99);
-    margin-bottom: 20px;
-    padding: 0 10px;
+#writeWrap textarea{
+    width: 70%; height: 500px;
+    resize: none;
+    border: 1px solid black;
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: left;
 }
 
+#btnWrap2{
+    text-align: end;
+    margin: 30px 0 100px 0;
+}
+#btnWrap2 button{
+    border: 1px solid black;
+    background-color: white;
+    width: 100px; height: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+ }
+ #imgBtn{
+    margin-bottom: 30px;
+ }
