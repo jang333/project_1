@@ -62,6 +62,7 @@ function 입차(){
     parkArray[ParkIndex] ={
         carNumber : cNum,
         enTime : {year:Number(time.split("-")[0]),month :Number(time.split("-")[1]), day:Number(time.split("-")[2].split("T")[0]),hour:Number(time.split("-")[2].split("T")[1].split(":")[0]),min:Number(time.split("-")[2].split("T")[1].split(":")[1])}
+        ,enFullTime: time
     }
 
     localStorage.setItem(`parkArray`,JSON.stringify(parkArray));
@@ -95,6 +96,10 @@ function 출차(){
         cNum : cNum,
         entime : parkArray[index].enTime,
         oTime : {year:Number(time.split("-")[0]),month :Number(time.split("-")[1]), day:Number(time.split("-")[2].split("T")[0]),hour:Number(time.split("-")[2].split("T")[1].split(":")[0]),min:Number(time.split("-")[2].split("T")[1].split(":")[1])}
+        ,
+        enFullTime : parkArray[index].enFullTime
+        ,
+        oFullTime : time
     }
 
     price = (calc.oTime.month-calc.entime.month)*30*24*60+(calc.oTime.day-calc.entime.day)*24*60+(calc.oTime.hour-calc.entime.hour)*60+calc.oTime.min-calc.entime.min
@@ -110,7 +115,16 @@ function 출차(){
     if(!parkCalc){
         parkCalc=[];
     }
-
+    let temp =""
+    for(let i = 0; i<parkCalc.length; i++){
+        for(let j = 0; j<parkCalc.length; j++){
+            if(parkCalc[i].time > parkCalc[j].time){
+                temp=parkCalc[j];
+                parkCalc[j] = parkCalc[i]
+                parkCalc[i] = temp
+            }
+        }
+    }
     parkCalc.push(calc);
     localStorage.setItem(`parkCalc`,JSON.stringify(parkCalc));
     parkArray[index].carNumber = "";
