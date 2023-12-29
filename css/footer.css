@@ -1,14 +1,10 @@
-*{
-    font-family: 'GmarketSansMedium';
-    font-size: 16px;
-    font-weight: bold;
-    
-}
+
 /*푸터 시작*/
 #footer{
     color: #949494;
     width: 100%;
-    background-color: #232323;
+    background-color: #1F1F1F;
+    color: #949494;
 }
 #footerWrap{
     width: calc(100% - 480px);
