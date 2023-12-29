@@ -1,4 +1,3 @@
-
 // 로그인 버튼을 눌렀을때 실행되는 함수
 function loginBtn(){
     console.log('로그인 버튼');

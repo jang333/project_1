@@ -9,6 +9,13 @@ function closeBtn(){
     loginBg.style.display = 'none';
     loginWrap.style.display = 'none';
 }
+
+// 헤더 푸터 불러오기
+$( document ).ready( function(){
+    $('#headers').load('../common/header.html');
+    $('#footers').load('../common/footer.html');
+})
+
 // 관리자 만드는 함수
 document.addEventListener('DOMContentLoaded' , function(){
     let userArray = JSON.parse(localStorage.getItem('userArray'));
@@ -25,9 +32,11 @@ document.addEventListener('DOMContentLoaded' , function(){
     // localStorage.setItem('userArray' , JSON.stringify(userArray));
     console.log(document.querySelector('#memberServices'))
     // 로그인 유지 함수
-    const member = document.querySelector('#member');
+    const member = document.querySelector('#member'); 
     const memberServices = document.querySelector('#memberServices');
+
     let html='';
+    
     for(let i = 0; i < userArray.length; i++){
         if(memberNumber == userArray[i].userNum){
             memberServices.style.display = 'none';
@@ -56,4 +65,9 @@ document.addEventListener('DOMContentLoaded' , function(){
             return;
         }
     }
+<<<<<<< HEAD
 })
+=======
+
+})
+>>>>>>> 2be6321eff6368f27f8ecf94813d3a4630ebf9d3
