@@ -1,8 +1,3 @@
-$( document ).ready( function(){
-    $('#headers').load('../common/header.html');
-    $('#footers').load('../common/footer.html');
-});
-
 document.addEventListener('DOMContentLoaded',function(){
     내역불러오기();
 });
