@@ -85,9 +85,6 @@ function floorBrandList(){
                     <td><button type="button" onclick='floorBrandDelete(${floorBrand.floorBrandNumber})'>삭제</button></td>
                 </tr>
             `
-        // if(floorBrand.floorCategoryNumber == floorCategoryNumber){
-            
-        // }
     }
 
     // 출력
