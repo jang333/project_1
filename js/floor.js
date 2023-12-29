@@ -28,7 +28,7 @@ function floorBrandIn(floorNumber){
 
     let html = ``;
     for(let i = 0; i<floorCategoryArray.length; i++){
-        var floorCategory = floorCategoryArray[i]
+        let floorCategory = floorCategoryArray[i]
         if(floorCategory.floorNumber == floorNumber){
             html += `
                 <div class="section">

@@ -61,3 +61,13 @@
 .floorBox button {cursor: pointer; transition: all 0.3s; background-color: #fff; padding: 10px 10px 5px; border: 2px solid #111;}
 .floorBox button:hover {background-color: #111;  color: #fff; font-weight: 700;}
 /* floor 등록 E */
+
+/* floor 관리자 리스트 S */
+.floorListWrap h4 {font-size: 20px;}
+.floorListWrap table {margin: 20px 0 50px; width: 100%; border-top: 1px solid #111;}
+.floorListWrap table tr {border-bottom: 1px solid #111;}
+.floorListWrap table tr th,
+.floorListWrap table tr td {padding: 10px 10px 7px; vertical-align: middle; text-align: center;}
+.floorListWrap table tr td button {width:80px; height: 30px; display: flex; align-items: center; justify-content: center; padding-top: 6px; transition: all 0.3s; margin: 0 auto;} 
+.floorListWrap table tr td button:hover {background-color: #111; color: #fff; font-weight: 700;}
+/* floor 관리자 리스트 E */
