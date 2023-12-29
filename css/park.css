@@ -4,6 +4,7 @@
     text-align: center;
     justify-content: space-between;
     padding-top: 100px;
+    margin: 0 auto;
 }
 #topPark > span{
     display: inline-block;

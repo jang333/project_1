@@ -1,7 +1,3 @@
-$( document ).ready( function(){
-    $('#headers').load('../common/header.html');
-});
-
 
 // 현재 선택된 주차장번호 가져오기
 let ParkIndex= JSON.parse(localStorage.getItem("ParkIndex")); 

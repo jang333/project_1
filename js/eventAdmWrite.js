@@ -1,8 +1,3 @@
-$( document ).ready( function(){
-    $('#headers').load('../common/header.html');
-    $('#footers').load('../common/footer.html');
-});
-
 function 등록(){
     const title = document.querySelector('#title').value;
     const sDate = document.querySelector('#sDate').value;
