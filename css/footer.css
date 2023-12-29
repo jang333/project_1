@@ -1,5 +1,11 @@
 
 /*푸터 시작*/
+*{
+    font-family: 'GmarketSansMedium';
+    font-size: 16px;
+    font-weight: bold;
+}
+
 #footer{
     width: 100%;
     background-color: #232323;
