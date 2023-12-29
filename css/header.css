@@ -234,3 +234,7 @@ ul,ol{
     border: 1px solid #adadad;
     cursor: pointer;
 }
+
+.adminMenu{
+    display: none;
+}

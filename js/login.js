@@ -41,6 +41,8 @@ function loginBtn(){
             `;
             member.innerHTML = html;
             localStorage.setItem('memberNumber', JSON.stringify(userArray[i].userNum));
+
+            location.reload(true);
             return;
         }
     }
@@ -59,5 +61,7 @@ function logoutBtn(){
     member.style.display = 'none';
 
     localStorage.removeItem('memberNumber');
+
+    location.reload(true);
 
 }

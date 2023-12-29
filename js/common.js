@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded' , function(){
     const memberServices = document.querySelector('#memberServices');
 
     let html='';
-    
+
     for(let i = 0; i < userArray.length; i++){
         if(memberNumber == userArray[i].userNum){
             memberServices.style.display = 'none';
@@ -165,6 +165,11 @@ document.addEventListener('DOMContentLoaded' , function(){
             `;
             member.innerHTML = html;
             localStorage.setItem('memberNumber', JSON.stringify(userArray[i].userNum));
+
+            const adminMenu = document.querySelector('.adminMenu');
+            if(memberNumber == 0){
+                adminMenu.style.display = 'block';
+            }
             return;
         }
     }

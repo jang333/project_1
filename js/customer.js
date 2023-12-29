@@ -4,7 +4,14 @@ document.addEventListener('DOMContentLoaded',function(){
 
 
 function 문의하기(){
-    location.href="customer_service.html";
+    const memberNumber = JSON.parse( localStorage.getItem('memberNumber') ) ;
+    if(memberNumber == null){
+        alert('로그인이 필요합니다.');
+    }
+    else{
+        location.href="customer_service.html";
+    }
+    
 }
 
 function 등록하기(){
@@ -45,10 +52,20 @@ function 등록하기(){
 function 아이디이름가져오는함수(){
     console.log('아이디이름가져오는함수() 실행');
 
-    const id = 'abc';
-    const name = '오승택';
+    let id = '';
+    let name = '';
 
-    //가져온 아이디, 이름 담는 변수
+    const userArray = JSON.parse( localStorage.getItem('userArray') ) ;
+    const memberNumber = JSON.parse( localStorage.getItem('memberNumber') ) ;
+    console.log(userArray);
+    console.log(memberNumber);
+
+    console.log(userArray[0].userId);
+
+    id = userArray[memberNumber].userId;
+    name = userArray[memberNumber].userName;
+
+    console.log(id);console.log(name);
 
     //html에 뿌려주는 함수?
     document.querySelector('#customer-id').textContent = id;
