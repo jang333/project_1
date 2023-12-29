@@ -1,4 +1,4 @@
-localStorage.setItem('floorNumber', 5);
+localStorage.setItem('floorNumber', 1);
 document.addEventListener('DOMContentLoaded',function(){
     var floorNumber = JSON.parse(localStorage.getItem('floorNumber'));
     floorNavIn(floorNumber);
