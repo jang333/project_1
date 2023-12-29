@@ -26,6 +26,7 @@
     justify-content: space-around;
     align-items: center;
 }
+
 #footNav{
     display: flex;
     margin-left: 80px;
