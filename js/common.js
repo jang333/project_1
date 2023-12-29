@@ -9,6 +9,13 @@ function closeBtn(){
     loginBg.style.display = 'none';
     loginWrap.style.display = 'none';
 }
+
+// 헤더 푸터 불러오기
+$( document ).ready( function(){
+    $('#headers').load('../common/header.html');
+    $('#footers').load('../common/footer.html');
+})
+
 // 관리자 만드는 함수
 document.addEventListener('DOMContentLoaded' , function(){
     let userArray = JSON.parse(localStorage.getItem('userArray'));
@@ -25,9 +32,11 @@ document.addEventListener('DOMContentLoaded' , function(){
     localStorage.setItem('userArray' , JSON.stringify(userArray));
 
     // 로그인 유지 함수
-    const member = document.querySelector('#member');
+    const member = document.querySelector('#member'); 
     const memberServices = document.querySelector('#memberServices');
+
     let html='';
+    
     for(let i = 0; i < userArray.length; i++){
         if(memberNumber == userArray[i].userNum){
             memberServices.style.display = 'none';
@@ -57,14 +66,3 @@ document.addEventListener('DOMContentLoaded' , function(){
         }
     }
 })
-// 헤더 푸터 불러오기
-$( document ).ready( function(){
-    $('#headers').load('../common/header.html');
-    $('#footers').load('../common/footer.html');
-    
-=======
-/* jquery 이용한 현재html에 다른 html 호출방법 */
-$( document ).ready( function(){
-    $('#headers').load('../common/header.html');
-    $('#footers').load('../common/footer.html');
-});
