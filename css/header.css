@@ -17,6 +17,7 @@ body{
     width: 100%;
     background-color: #fff;
     position: fixed;
+    z-index: 999;
 }
 #headerWrap{
     width: calc(100% - 480px);
