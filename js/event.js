@@ -9,36 +9,6 @@ document.addEventListener('DOMContentLoaded',function(){
 //이벤트 목록
 function eventList(){
     let eventArray = JSON.parse(localStorage.getItem('eventList'));
-    console.log(eventArray);
-    if(eventArray==null){
-        eventArray=[
-            {
-                eContent : "환영 이벤트",
-                eDate : "2024-1-14",
-                eImg: "../img/event_view/event_1_view.png",
-                eName : "앱 신년 이벤트",
-                eNum : 1,
-                sDate: "2023-12-15"
-            },
-            {
-                eContent: "크리스마스 현장으로 여러분을 초대합니다!",
-                eDate:"2023-12-31",
-                eImg: "../img/event_view/event_2_view.PNG",
-                eName: "La Boutique d'Harry",
-                eNum: 2,
-                sDate: "2023-12-17"
-            },
-            {
-                eContent : "그린프랜즈가 되어 주세요!",
-                eDate : "2024.01.17",
-                eImg : "../img/event_view/event_3_view.jpg",
-                eName : "1월 365 리사이클 캠페인",
-                eNum : 3,
-                sDate : "2024.01.08",
-            }
-        ]
-        localStorage.setItem("eventList", JSON.stringify(eventArray));
-    }
     //1.어디에
     const eList = document.querySelector('#eList');
 
