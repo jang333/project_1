@@ -5,9 +5,10 @@ $( document ).ready( function(){
 
 function 등록(){
     const title = document.querySelector('#title').value;
-    const date = document.querySelector('#date').value;
+    const sDate = document.querySelector('#sDate').value;
+    const eDate = document.querySelector('#eDate').value;
     const content = document.querySelector('textarea').value;
-    console.log(title); console.log(date); console.log(content);
+    console.log(title); console.log(sDate); console.log(content);
 
         //등록 유효성검사
         if(title.length < 1){alert('제목을 입력해주세요'); return;}
@@ -21,9 +22,10 @@ function 등록(){
 
     //객체화
     const ewrite = {
-        eNum : eventList.length+1,
+        eNum : eventList.length >= 1 ? eventList[ eventList.length-1 ].eNum + 1 : 1,
         eName : title,
-        eDate : date,
+        sDate : sDate,
+        eDate : eDate,
         eImg : imgByte,
         eContent : content.replace('\n','<br/>')
     }

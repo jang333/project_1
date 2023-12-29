@@ -9,7 +9,8 @@ let eventArray = [
     {
         eNum : 1,
         eName : '앱 신년 이벤트',
-        eDate : '2023.12.25 ~ 2024.01.07',
+        sDate : '2023.12.25',
+        sDate : '2024.01.07',
         eImg : '/img/event/event_1.png',
         eContent : '앱 신년 이벤트 도전해보세요!'
     },
@@ -45,13 +46,13 @@ function eventList(){
     //2.무엇을
     html = ``;    
 
-    for(let i = 0 ; i<eventArray.length ; i++){
+    for(let i = eventArray.length-1 ; i>=0 ; i--){
         const e = eventArray[i]
         html+=`<a href="#" onclick='eventpage(${e.eNum})'>
                     <ul class="event">
                         <img class="eImge" src="${e.eImg}"/>
                         <li class="eName">${e.eName}</li>
-                        <li class="eDate">기간 : ${e.eDate}</li>
+                        <li class="eDate">기간 : ${e.sDate}~${e.eDate}</li>
                     </ul>
                 </a> `
     }
