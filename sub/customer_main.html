@@ -4,13 +4,31 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>고객 서비스 문의</title>
-    <link rel="stylesheet" href="css/reset.css">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/reset.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='/css/customer.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/footer.css'>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src='/js/customer.js'></script>
+    
 </head>
 <body>
+    <div id="headers" style="height: 70px;"></div>
+
     <div class="wrap">
+
+
+        <div id="subNav">
+            <h3>층별안내</h3>
+            <ul>
+                <li><a href="javascript:alert('준비중입니다.')">공지사항</a></li>
+                <li class="current"><a href="/sub/customer_main.html">고객 문의</a></li>
+                <li><a href="javascript:alert('준비중입니다.')">자주하는 질문</a></li>
+                <li><a href="/sub/admin_main.html">문의 내역</a></li>
+                <!-- <li><a href="javascript:alert('준비중입니다.')">1F 화장품</a></li> -->
+            </ul>
+        </div>
 
         <!-- 고객문의 메인 -->
         <div class="main">
@@ -25,7 +43,7 @@
             </div>
 
             <div class="btn-box">
-                <button>문의하기</button>
+                <button onclick="문의하기()">문의하기</button>
             </div>
 
             <div class="graybox-wrap">
@@ -52,19 +70,8 @@
 
         </div>
 
-        <!-- 사이드 네브바 -->
-        <div class="side">
-            <h2> 고객 서비스 </h2>
-            <div>
-                <ul>
-                    <li>공지사항</li>
-                    <li>고객 서비스 문의</li>
-                    <li>자주하는 질문</li>
-                    <li>SNS 서비스</li>
-                </ul>
-            </div>
-        </div>
-
     </div>
+
+    <div id="footers"></div>
 </body>
 </html>
