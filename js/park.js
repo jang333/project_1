@@ -1,3 +1,8 @@
+$( document ).ready( function(){
+    $('#headers').load('../common/header.html');
+});
+
+
 // 현재 선택된 주차장번호 가져오기
 let ParkIndex= JSON.parse(localStorage.getItem("ParkIndex")); 
 
@@ -76,7 +81,7 @@ function 층찾기(){
     // 객체안 배열의 indexOf
     let index = parkArray.findIndex(i => i.carNumber == fNum);
     if(index >= 0){
-        alert(`${fNum}은 ${index+1}번에 있으며 ${parseInt(index/5)+1}층에 있습니다`)
+        alert(`${fNum}은 ${index+1}번에 있으며 지하 ${parseInt(index/5)+1}층에 있습니다`)
         park(parseInt(index/5)) 
         return;
     }
