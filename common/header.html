@@ -5,8 +5,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>header</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='../css/reset.css'> -->
     <link rel='stylesheet' type='text/css' media='screen' href='../css/header.css'>
+    <script src="../js/common.js"></script>
     <script src="../js/login.js"></script>
 </head>
 <body>
@@ -20,7 +20,7 @@
                 </h1>
                 <ul id="gnv">
                     <li>
-                        <a href="#">
+                        <a href="../sub/floor.html">
                             층별안내
                         </a>
                     </li>
@@ -49,12 +49,12 @@
             <div id="rightHeader">
                 <ul id="memberServices">
                     <li>
-                        <a href="#" id="loginBtn">
+                        <a href="#" onclick="loginPop()" id="loginBtn">
                             로그인
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="../sub/join.html">
                             회원가입
                         </a>
                     </li>
@@ -63,28 +63,31 @@
                             회원관리
                         </a>
                     </li>
-                    <li>
-                        <button id="search">
-                            <span>검색</span>
-                            <img src="../img/search.png"/>
-                        </button>
-                    </li>
                 </ul>
             </div>
+            <div id="member" style="display: none;">
+
+            </div>
+
+            
+            <button id="search">
+                <span>검색</span>
+                <img src="../img/search.png"/>
+            </button>
         </div>
     </div>
     <div id="loginBg">
         <div id="loginWrap">
             <h3>로그인</h3>
-            <button id="closeBtn">
+            <button id="closeBtn" onclick="closeBtn()">
                 <img src="../img/closeBtn.png" style="width: 40px;"/>
             </button>
             <div id="loginBox">
                 <form>
                     <p>아이디</p>
-                    <input type="text" placeholder="아이디"/>
+                    <input id="putId" type="text" placeholder="아이디"/>
                     <p>비밀번호</p>
-                    <input type="password" placeholder="비밀번호"/>
+                    <input id="putPw" type="password" placeholder="비밀번호"/>
                     <ul id="loginList">
                         <li>
                             <a href="#">
@@ -97,12 +100,12 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="../sub/join.html">
                                 회원가입
                             </a>
                         </li>
                     </ul>
-                    <input id="login" type="button" value="로그인"/>
+                    <input onclick="loginBtn()" id="login" type="button" value="로그인"/>
                     <input id="fastLogin" type="button" value="빠른 로그인"/>
                     <input id="otpLogin" type="button" value="OTP 인증번호 로그인"/>
                 </form>

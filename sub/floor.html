@@ -7,74 +7,69 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/reset.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='../css/floor.css'>
-    <script src=''></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src='../js/common.js'></script>
+    <script src='../js/floor.js'></script>
 </head>
     <body>
-        <div id="header"></div>
-        <div id="wrap">
-            <div id="subNav">
-                <h3>층별안내</h3>
-                <ul>
-                    <li class="current"><a href="javascript:alert('준비중입니다.')">5F Dining</a></li>
-                    <li><a href="javascript:alert('준비중입니다.')">4F 아동</a></li>
-                    <li><a href="javascript:alert('준비중입니다.')">3F 남성</a></li>
-                    <li><a href="javascript:alert('준비중입니다.')">2F 여성</a></li>
-                    <li><a href="javascript:alert('준비중입니다.')">1F 화장품</a></li>
+    <div id="headers" style="height: 70px;"></div>
+    <div id="wrap">
+        <div id="subNav">
+            <h3>층별안내</h3>
+            <ul>
+                <li class="current"><a href="javascript:alert('준비중입니다.')">층별안내</a></li>
+            </ul>
+        </div>
+        <div id="main">
+            <h3>
+                층별안내
+                <div class="btnWrap">
+                    <button type="button" onclick="location.href='floorList.html'">관리자페이지</button>
+                </div>
+            </h3>
+            <div class="floorInfo">
+                <ul class="floorNav">
+                    <li class="current"><a href="#">전체보기</a></li>
+                    <li><a href="#">전문식당</a></li>
+                    <li><a href="#">카페</a></li>
+                    <li><a href="#">편의시설</a></li>
                 </ul>
-            </div>
-            <div id="main">
-                <h3>
-                    5F Dining
-                    <div class="btnWrap">
-                        <button type="button" onclick="location.href='floorAdmWrite.html'">등록</button>
-                        <button type="button">수정</button>
-                        <button type="button">삭제</button>
+
+                <div class="floorContent">
+                    <div class="section">
+                        <h4>전문식당</h4>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
                     </div>
-                </h3>
 
-                <div class="floorInfo">
-                    <ul class="floorNav">
-                        <li class="current"><a href="#">전체보기</a></li>
-                        <li><a href="#">전문식당</a></li>
-                        <li><a href="#">카페</a></li>
-                        <li><a href="#">편의시설</a></li>
-                    </ul>
-
-                    <div class="floorContent">
-                        <div class="section">
-                            <h4>전문식당</h4>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                        </div>
-
-                        <div class="section">
-                            <h4>카페</h4>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                        </div>
-                        <div class="section">
-                            <h4>편의시설</h4>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                            <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
-                        </div>
+                    <div class="section">
+                        <h4>카페</h4>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                    </div>
+                    <div class="section">
+                        <h4>편의시설</h4>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
+                        <p><span class="brand">브랜드이름</span><span class="Tel">브랜드매장번호</span></p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="footer"></div>
-    </body>
+    </div>
+    <div id="footers"></div>
+</body>
 </html>
