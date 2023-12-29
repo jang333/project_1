@@ -24,7 +24,8 @@ function view(){
                         <h3>${eventList[i].eName}</h3>
                         <span>기간 : ${eventList[i].sDate} ~ ${eventList[i].eDate}</span>
                     </div>
-                    <img src="${eventList[i].eImg}"> `
+                    <img src="${eventList[i].eImg}"> 
+                    <div>${eventList[i].eContent}</div>`
                     
         }   
     }
