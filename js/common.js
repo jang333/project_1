@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded' , function(){
             userName : '관리자',
         }];
     }
-    localStorage.setItem('userArray' , JSON.stringify(userArray));
-
+    // localStorage.setItem('userArray' , JSON.stringify(userArray));
+    console.log(document.querySelector('#memberServices'))
     // 로그인 유지 함수
     const member = document.querySelector('#member');
     const memberServices = document.querySelector('#memberServices');
@@ -57,8 +57,3 @@ document.addEventListener('DOMContentLoaded' , function(){
         }
     }
 })
-// 헤더 푸터 불러오기
-$( document ).ready( function(){
-    $('#headers').load('../common/header.html');
-    $('#footers').load('../common/footer.html');
-});
