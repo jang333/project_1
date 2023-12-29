@@ -23,14 +23,14 @@
                 <li><a href="javascript:alert('준비중입니다.')">공지사항</a></li>
                 <li class="current"><a href="/sub/customer_main.html">고객 문의</a></li>
                 <li><a href="javascript:alert('준비중입니다.')">자주하는 질문</a></li>
-                <!-- <li><a href="javascript:alert('준비중입니다.')">2F 여성</a></li> -->
+                <li><a href="/sub/admin_main.html">문의 내역</a></li>
                 <!-- <li><a href="javascript:alert('준비중입니다.')">1F 화장품</a></li> -->
             </ul>
         </div>
 
         <!-- 고객문의 메인 -->
         <div class="main">
-            <h2> 고객 서비스 </h2>
+            <h2> 고객 문의 </h2>
             <table class="customer-table">
                 <tbody>
                     <tr>
@@ -41,9 +41,23 @@
                     </tr>
                     <tr>
                         <th>문의유형</th>
-                        <td></td>
+                        <td>
+                            <select name="category">
+                                <option value="">유형 선택</option>
+                                <option value="환불">환불</option>
+                                <option value="서비스 관련">서비스 관련</option>
+                                <option value="기타">기타</option>
+                            </select>
+                        </td>
                         <th>지점선택</th>
-                        <td></td>
+                        <td>
+                            <select name="place">
+                                <option value="">지점 선택</option>
+                                <option value="안산점">안산점</option>
+                                <option value="광명점">광명점</option>
+                                <option value="시흥점">시흥점</option>
+                            </select>
+                        </td>
                     </tr>
                     <tr>
                         <th>제목</th>

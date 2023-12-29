@@ -37,7 +37,7 @@ function 등록하기(){
     // 방금 가입된 회원객체 배열에 추가
     customerArray.push( customer ); 
     console.log(customerArray);
-    // localStorage.setItem( 'customerArray' , JSON.stringify( customerArray )  );
+    localStorage.setItem( 'customerArray' , JSON.stringify( customerArray )  );
 
 
 
